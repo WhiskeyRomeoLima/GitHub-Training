@@ -21,3 +21,4 @@ git add filename -- to add file to git tracking systme
 git add . -- to add untracked files to git tracking system
 git commit -m
 git commit
+git commit -am "Add Commit Message here"  --Express Commit -- add modified files to staging and commits them
