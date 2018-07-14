@@ -51,3 +51,23 @@ git checkout -b updates === creates a new branch call 'updates' with HEAD pointi
 git branch -d nameOfBranch === deletes branch called nameOfBranch
 
 #### Example of branching and merging
+
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git branch
+* master
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git checkout -b updates <!-- created new branch -->
+Switched to a new branch 'updates'
+M       README.md
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git add . <!-- added changes to staging -->
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git commit -m 'adding updates to Readme.md in the updates branch'
+[updates 9bd513d] adding updates to Readme.md in the updates branch
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ <!-- now do git hist to see head points to updates branch -->
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
+* 9bd513d (HEAD -> updates) adding updates to Readme.md in the updates branch
+* cb449b5 (master) updates to README.md in the updates branch
+* 28764ca updates to README.md in the updates branch
+* f790fa9 updates to README.md in the updates branch
+* ccc7018 changes to README.md
+* 78a8a09 updating Readme
+* 27bd010 updating Readme
+* cc94713 this is a commit
