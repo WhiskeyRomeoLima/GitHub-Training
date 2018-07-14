@@ -8,7 +8,7 @@ rm -rf foldername === to recursively remove a folder
 
 ## PS command
 
-code === create file
+code === to create file
 code .gitignore === to create a .gitignore file
 ls === list files
 ls -Force === lists files and folders including hidden
@@ -42,3 +42,8 @@ git commit -am "Add Commit Message here"  ===Express Commit === add modified fil
 
 git vm oldfilename newfilename === renames a file  === must be followed by a commit
 git rm filename === removes filename from project  === must be followed by a commit
+
+### Branching
+
+git branch === displays all branches
+git checkout -b updates === creates a new branch call 'updates' with HEAD pointing to it.
