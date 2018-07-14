@@ -21,7 +21,7 @@ git config --global -e
 git init . === initialize the current folder === the period denotes the current folder.
 git status === to get current status of project
 
-git log === show listing of commits in repository 
+git log === show listing of commits in repository
 git log --oneline --graph --decorate --all ===== shows a conveniently modifed history of git
 git config --global alias.hist "log --oneline --graph --decorate --all"  === creates an alias for the above line
 git hist === Now we can use this command instead of typing all the flags
