@@ -71,3 +71,4 @@ PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
 * 78a8a09 updating Readme
 * 27bd010 updating Readme
 * cc94713 this is a commit
+<!-- now finished with update branch time to merge to master -->
