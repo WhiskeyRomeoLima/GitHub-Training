@@ -46,7 +46,7 @@ git rm filename === removes filename from project  === must be followed by a com
 ### Branching
 
 git checkout nameOfBranch === switches to branch called nameOfBranch
-git branch === displays all branches
+git branch === displays current branche
 git checkout -b updates === creates a new branch call 'updates' with HEAD pointing to it.
 git branch -d nameOfBranch === deletes branch called nameOfBranch
 
@@ -63,7 +63,9 @@ PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git commit -m '
  1 file changed, 4 insertions(+), 1 deletion(-)
  <!-- now do git hist to see head points to updates branch -->
 PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
-* 9bd513d (HEAD -> updates) adding updates to Readme.md in the updates branch
+* bbf19c5 (HEAD -> updates) final commit on update branch
+* f9c14be final commit on update branch
+* 9bd513d adding updates to Readme.md in the updates branch
 * cb449b5 (master) updates to README.md in the updates branch
 * 28764ca updates to README.md in the updates branch
 * f790fa9 updates to README.md in the updates branch
@@ -71,4 +73,42 @@ PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
 * 78a8a09 updating Readme
 * 27bd010 updating Readme
 * cc94713 this is a commit
+
 <!-- now finished with update branch time to merge to master -->
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git checkout master
+Switched to branch 'master'
+
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
+` bbf19c5 (updates) final commit on update branch
+` f9c14be final commit on update branch
+` 9bd513d adding updates to Readme.md in the updates branch
+` cb449b5 (HEAD -> master) updates to README.md in the updates branch
+` 28764ca updates to README.md in the updates branch
+* f790fa9 updates to README.md in the updates branch
+* ccc7018 changes to README.md
+* 78a8a09 updating Readme
+* 27bd010 updating Readme
+* cc94713 this is a commit
+
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git merge updates
+Updating cb449b5..bbf19c5
+Fast-forward
+ README.md | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+
+ PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git hist
+* bbf19c5 (HEAD -> master, updates) final commit on update branch
+* f9c14be final commit on update branch
+* 9bd513d adding updates to Readme.md in the updates branch
+* cb449b5 updates to README.md in the updates branch
+* 28764ca updates to README.md in the updates branch
+* f790fa9 updates to README.md in the updates branch
+* ccc7018 changes to README.md
+* 78a8a09 updating Readme
+* 27bd010 updating Readme
+* cc94713 this is a commit
+
+remove updates branch
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo> git branch -d updates
+Deleted branch updates (was bbf19c5).
+PS F:\visual studio 2017\Training\GitHub Ultimate\projects\demo>
