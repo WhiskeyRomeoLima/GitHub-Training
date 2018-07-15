@@ -46,7 +46,7 @@ git rm filename === removes filename from project  === must be followed by a com
 ### Branching
 
 git checkout nameOfBranch === switches to branch called nameOfBranch
-git branch === displays current branche
+git branch === displays all branches and indicates where HEAD is pointing
 git checkout -b updates === creates a new branch call 'updates' with HEAD pointing to it.
 git branch -d nameOfBranch === deletes branch called nameOfBranch
 
